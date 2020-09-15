@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="目标在Win7上建立一个Scrapy爬虫项目，以及对其进行基本操作。运行环境：电脑上已经安装了python(环境变量path已经设置好)， 以及scrapy模块，IDE为Pycharm 。操作如下： " />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>在Pycharm中运行Scrapy爬虫项目的基本操作 - HEHEOMG - 博客园</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.ico?v=20200522" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="https://www.cnblogs.com/css/blog-common.min.css" />
+    <link id="MainCss" rel="stylesheet" href="https://www.cnblogs.com/skins/codinglife/bundle-codinglife.min.css" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="https://www.cnblogs.com/skins/codinglife/bundle-codinglife-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/llssx/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/llssx/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/llssx/wlwmanifest.xml" />
+    <script>
+        var currentBlogId = 314874;
+        var currentBlogApp = 'llssx';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var isBlogOwner = false;
+        var skinName = 'CodingLife';
+        var visitorUserId = '';
+    </script>
+        <script>
+            var currentPostDateAdded = '2018-01-29 06:52';
+        </script>
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="https://www.cnblogs.com/js/blog-common.min.js"></script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/llssx/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/llssx/">在白底黑字中读懂自己</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/llssx/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/HEHEOMG">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="javascript:void(0)" data-rss="https://www.cnblogs.com/llssx/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+12&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+3</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/llssx/p/8378832.html">
+    <span>在Pycharm中运行Scrapy爬虫项目的基本操作</span>
+    
+
+
+</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body">
+    <p>目标在Win7上建立一个Scrapy爬虫项目，以及对其进行基本操作。运行环境：电脑上已经安装了python(环境变量path已经设置好)，</p>
+<p>以及scrapy模块，IDE为Pycharm 。操作如下：</p>
+<p>&nbsp;</p>
+<p>　　一、<span style="font-size: 18px;"><strong>建立Scrapy模板</strong></span>。进入自己的工作目录，shift +&nbsp;鼠标右键进入命令行模式，在命令行模式下，&nbsp;</p>
+<p>输入scrapy startproject 项目名&nbsp;,如下：</p>
+<p><img src="https://images2017.cnblogs.com/blog/955639/201801/955639-20180129182518906-1132842836.png" alt="" /></p>
+<p>看到以上的代码说明项目已经在工作目录中建好了。</p>
+<p>&nbsp;</p>
+<p>　　二、<strong><span style="font-size: 18px;">在Pycharm中scrapy的导入</span></strong>。在Pycharm中打开工作目录中的TestDemo，点击File-&gt;&nbsp;Settings-&gt;Project: TestDemo-&gt;Project Interpreter。</p>
+<p>法一： 如图，</p>
+<p><img src="https://images2017.cnblogs.com/blog/955639/201801/955639-20180129182840437-782488650.png" alt="" /></p>
+<p>选择红框中右边的下拉菜单点击Show All, 如图：</p>
+<p><img src="https://images2017.cnblogs.com/blog/955639/201801/955639-20180129183010671-1615664804.png" alt="" /></p>
+<p>点击右上角加号，如图：</p>
+<p><img src="https://images2017.cnblogs.com/blog/955639/201801/955639-20180129183052546-1973065312.png" alt="" /></p>
+<p>在红色框体内找到电脑里已经安装的python，比如我的是：</p>
+<p>C:\Users\Administrator\AppData\Local\Programs\Python\Python36-32\python.exe , 导入即可。</p>
+<p>之后，pycharm会自动导入你已经在电脑上安装的scrapy等模块。如图，即红色框体中显示的。</p>
+<p><img src="https://images2017.cnblogs.com/blog/955639/201801/955639-20180129183254406-1117251160.png" alt="" /></p>
+<p>法二：一个不那么麻烦的方法。如图：</p>
+<p><img src="https://images2017.cnblogs.com/blog/955639/201801/955639-20180129183345875-433657458.png" alt="" /></p>
+<p>点击红色框体，在弹出的框体内另安装一个scrapy,&nbsp;如图：</p>
+<p>&nbsp;<img src="https://images2017.cnblogs.com/blog/955639/201801/955639-20180129183502968-1389849547.png" alt="" /></p>
+<p>需要安装的模块，如图：</p>
+<p><img src="https://images2017.cnblogs.com/blog/955639/201801/955639-20180129183539968-1044461240.png" alt="" /></p>
+<p>模块自下而上进行安装，其中可能出现twisted包不能成功安装，出现</p>
+<p>Failed building wheel for Twisted</p>
+<p>Microsoft Visual C++ 14.0 is required...</p>
+<p>的现象，那就搜一解决方案，这里不多说了。</p>
+<p>&nbsp;</p>
+<p>三、<strong><span style="font-size: 18px;">Pycharm中scrapy的运行设置。</span></strong></p>
+<p>&nbsp;　　法一：Scrapy爬虫的运行需要到命令行下运行，在pychram中左下角有个Terminal,点开就可以在Pycharm下进入命令行，默认</p>
+<p>是在项目目录下的，要运行项目，需要进入下一层目录，使用cd TestDemo 进入下一层目录，然后用scrapy crawl 爬虫名 ， 即可运行爬虫。</p>
+<p>如图：</p>
+<p><img src="https://images2017.cnblogs.com/blog/955639/201801/955639-20180129183744984-1839320247.png" alt="" /></p>
+<p><img src="https://images2017.cnblogs.com/blog/955639/201801/955639-20180129183813484-2130055015.png" alt="" /></p>
+<p>　　法二：在TestDemoSpider目录和scrapy.cfg同级目录下面，新建一个entrypoint.py文件,如图：</p>
+<p><img src="https://images2017.cnblogs.com/blog/955639/201801/955639-20180129183900343-719439966.png" alt="" /></p>
+<p>其中只需把红色框体内的内容改成相应的爬虫的名字就可以在不同的爬虫项目中使用了，直接运行该文件就能使得Scrapy爬虫运行</p>
+<p>&nbsp;</p>
+<p>Tips:在创建爬虫时使用模板更加方便一些，如：</p>
+<p>&nbsp;scrapy genspider [-t template] &lt;name&gt; &lt;domain&gt;&nbsp; &nbsp;即：scrapy genspider testDemoSpider baidu.com</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2018-01-29 18:52</span>&nbsp;
+<a href="https://www.cnblogs.com/llssx/">HEHEOMG</a>&nbsp;
+阅读(<span id="post_view_count">40930</span>)&nbsp;
+评论(<span id="post_comment_count">3</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=8378832" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(8378832);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 314874, cb_blogApp = 'llssx', cb_blogUserGuid = '1f66bb94-b718-e611-9fc1-ac853d9f53cc';
+    var cb_entryId = 8378832, cb_entryCreatedDate = '2018-01-29 18:52', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+    loadSideColumnAd();
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id='div-gpt-ad-1592365906576-0' style='width: 300px; height: 250px;'></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id='div-gpt-ad-1592366332455-0' style='width: 468px; height: 60px;'></div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverT2();
+        deliverC1C2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="sidebar_ad"></div>
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 HEHEOMG
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>
